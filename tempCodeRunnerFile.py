@@ -1,0 +1,1 @@
+int(numbers[mid]) + int(numbers[mid-1]) 
