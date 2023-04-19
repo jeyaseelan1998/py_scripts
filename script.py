@@ -9,6 +9,11 @@ def findProduct(num_list):
             product *= int(num)
         return product
 
+# list_a = [2, 3, 4, 2, 6, 4]
+#   2 x 3 x 4 = 24  list_a[:3]
+#   6 x 4   = 24    list_a[4:]
+#  mid point is 3, so element 2 is output
+
 num_list = input().split()
 
 length = len(num_list)
