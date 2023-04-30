@@ -2,6 +2,8 @@ class Product:
     # Class attribute
     rupee_sign = '\u20B9'
     def __init__(self, name, price, deal_price, rating):
+        if price < 1:
+            raise ValueError('Invalid price quoted, got {}'.format(price))  # raising an exception to the developer
         # Instance attribute
         self.name = name
         self.price = price
